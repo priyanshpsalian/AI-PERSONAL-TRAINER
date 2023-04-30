@@ -1,0 +1,36 @@
+.menu-list{
+	@include respond ('phone-land'){
+		&>img{
+			float: left;
+		}
+		ul{
+			float:left;
+			flex-flow:wrap;
+			display:flex;
+			li{
+				margin-right: 25px;
+			}
+		}
+	}
+	@include respond ('phone'){
+		&>img{
+			width:90px;
+			height:110px;
+			object-fit:cover;
+		}
+	}
+}
+.plus-icon{
+	height:60px;
+	width:60px;
+	min-width: 60px;
+	display: inline-block;
+	line-height:60px;
+	text-align:center;
+	@include respond ('phone-land'){
+		height:40px;
+		width:40px;
+		min-width: 40px;
+		line-height:40px;
+	}
+}
