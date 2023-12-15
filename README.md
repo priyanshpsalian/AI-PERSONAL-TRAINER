@@ -60,10 +60,6 @@ Ready to embark on your fitness adventure? Dive into our comprehensive installat
 
 We invite you to become part of the fitness tech Avengers! Contributions, ideas, and feedback from fellow fitness enthusiasts are highly welcomed. Check out our GitHub repository for guidelines on shaping the future of fitness with us. 🚀
 
-## License 📜
-
-This project operates under the liberating wings of the [MIT License](LICENSE). Feel free to adapt, share, and build upon it. Please remember to give credit where it's due and respect the license terms. 🙌
-
 ---
 
 Welcome to the future of fitness, where AI, React, Node.js, and advanced technology meet sweat, determination, and an unprecedented level of engagement! The AI Personal Trainer project is your fitness companion, coach, and motivator. If you have questions or need assistance, don't hesitate to reach out to the project team.
