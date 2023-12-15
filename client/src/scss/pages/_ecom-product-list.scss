@@ -1,0 +1,80 @@
+/*
+===================================
+    list view
+===================================*/
+
+.new-arrival-content {
+    .item {
+        font-size: 12px;
+        color: $dark;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+		a{
+			color: #000;
+		}
+    }
+    .price {
+        font-weight: 600;
+        color: $primary;
+        font-size: 24px;
+        margin-bottom: 0;
+		float: right;
+    }
+    p {
+        font-size: 14px;
+        color: $d-ctl;
+        margin-bottom: 3px;
+        line-height: 24px;
+    }
+    .text-content {
+        margin-top: 10px;
+    }
+	@include respond('phone') {
+		.price {
+			float: left;
+			margin-top: 10px;
+		}
+	}
+	&.text-center{
+		.price {
+			float: unset;
+		}
+	}
+}
+.new-arrival-content.text-center .price {
+	float: unset;
+}
+.product-detail-content .price {
+	float: unset;
+	margin-bottom: 10px;
+}
+.success-icon {
+    color: $success;
+    font-size: 16px;
+}
+
+.comment-review {
+	margin-bottom: 15px;
+    display: table;
+    width: 100%;
+    .client-review {
+        color: $d-ctl;
+        padding-right: 20px;
+        text-decoration: underline !important;
+        font-size: 14px;
+    }
+    .span {
+        color: $d-ctl;
+        font-size: 14px;
+    }
+}
+
+.star-rating li {
+    display: inline-block;
+    i {
+        color: gold;
+    }
+}

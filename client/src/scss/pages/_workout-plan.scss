@@ -1,0 +1,121 @@
+.event-calender{
+	.bootstrap-datetimepicker-widget table th.picker-switch {
+		width: 145px;
+		font-size: 20px;
+		font-weight: 500;
+		color: $black;
+	}
+	.bootstrap-datetimepicker-widget table th {
+		height: 20px;
+		line-height: 20px;
+		width: 20px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.bootstrap-datetimepicker-widget table td.day {
+		height: 46px;
+		line-height: 30px;
+		width: 46px;
+		color: $black;
+		font-weight: 500;
+	}
+	.bootstrap-datetimepicker-widget .picker-switch td i {
+		line-height: 2.5;
+		height: 2.5em;
+		width: 100%;
+		display: none;
+	}
+	.datepicker table tr td.today{
+		background:#EEEEEE!important;
+		box-shadow:none;
+	}
+	
+	.datepicker table tr td.active.active{
+		background:#EEEEEE!important;
+		box-shadow:none;
+		color:#000 !important;
+	}
+	.bootstrap-datetimepicker-widget table td.day:hover {
+		box-shadow: none;
+		border: 0;
+		background: $primary!important;
+		color:$white !important;
+	}
+	.bootstrap-datetimepicker-widget table td.today:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: -5px;
+		border:3px solid $white;
+		right: -5px;
+		height: 17px;
+		width: 17px;
+		background: $primary;
+		border-radius: 12px;
+	}
+	.bootstrap-datetimepicker-widget table td, .bootstrap-datetimepicker-widget table th{
+		border-radius:10px;
+	}
+	.bootstrap-datetimepicker-widget table td.new {
+		color: #dee2e6!important;
+	}
+	.bootstrap-datetimepicker-widget table thead tr:first-child th {
+		cursor: pointer;
+		padding: 30px 10px;
+	}
+	.bootstrap-datetimepicker-widget table td span.active, 
+	.bootstrap-datetimepicker-widget table td i.active{
+	    color: #000;
+	}
+}
+.date-icon{
+	height:60px;
+	width:60px;
+	font-size:24px;
+	line-height:60px;
+	text-align:center;
+	color:$primary;
+	background:rgba($primary,0.2);
+	border-radius:1.25rem;
+}
+
+
+//plan-list
+.plan-list{
+	.list-row{
+		border:1px solid #EAEAEA;
+		border-radius:1.25rem;
+		.list-icon{
+			height:76px;
+			width:76px;
+			font-weight: 600;
+			line-height:20px;
+			text-align:center;
+			border-radius:1.25rem;
+			border:1px solid rgba($primary,0.2);
+			@include respond ('phone'){
+				height: 55px;
+				width: 55px;
+				p{
+					font-size:20px!important;
+					margin-top:0px!important;
+				}
+			}
+		}
+		&:hover{
+			border-color:$primary;
+			.list-icon{
+				background:$primary;
+				p,span{
+					color:$white!important;
+				}
+			}
+		}
+		.info{
+			width: 37%;
+			@include respond ('phone'){
+				width: 73%;
+			}
+		}
+	}
+}

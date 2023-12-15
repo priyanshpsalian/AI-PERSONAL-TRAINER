@@ -1,0 +1,82 @@
+.distance-bx{
+	.icon{
+		height:65px;
+		width:65px;
+		line-height:60px;
+		display:block;
+		border-radius:100%;
+		text-align:center;
+		&.shadow-warning{
+			box-shadow: 0px 0px 10px rgba($warning,0.4);
+		}
+		&.shadow-info{
+			box-shadow: 0px 0px 10px rgba($info,0.4);
+		}
+		@include respond ('phone'){
+			height:45px;
+			width:45px;
+			line-height:45px;
+		}
+	}
+	.progress{
+		overflow:visible;
+		.progress-bar{
+			overflow:visible;
+			position:relative;
+			border-radius:9px;
+			.arrow{
+				height:10px;
+				width:10px;
+				position:absolute;
+				top: -5px;
+				right: 5px;
+				transform: rotate(45deg);
+			}
+			.counter-bx{
+				position: absolute;
+				right: -15px;
+				font-size: 16px;
+				top: -32px;
+				@include respond ('phone'){
+					font-size:12px;
+					top:-25px;
+				}
+			}
+		}
+	}
+}
+.activity-icon{
+	height:50px;
+	text-align:center;
+	width:50px;
+	min-width:50px;
+	border-radius:50px;
+	line-height:46px;
+}
+.border-2{
+	border-width:2px!important;
+}
+.map-bx{
+	position:relative;
+	margin-bottom:50px;
+	img{
+		max-width: 100%;
+		object-fit: cover;
+		object-position: center;
+		height: 430px;
+	}
+	
+	.map-info{
+		width:340px;
+		position:absolute;
+		right:30px;
+		bottom:-50px;
+	}
+	@include respond ('phone-land'){
+		.map-info{
+			width:100%;
+			position:unset;
+			margin-top:30px;
+		}
+	}
+}
